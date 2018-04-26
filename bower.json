@@ -1,0 +1,18 @@
+{
+    "name": "adapt-imageReveal",
+    "repository": "",
+    "framework": "^2.0.0",
+    "version": "1.0.1",
+    "homepage": "",
+    "issues": "",
+    "author": "Peter Stewart",
+    "displayName": "Image Reveal",
+    "component": "imageReveal",
+    "description": "Drag to reveal image (left to right)",
+    "main": "/js/adapt-imageReveal.js",
+    "keywords": [
+        "adapt-plugin",
+        "adapt-component"
+    ],
+    "license": "GPLv3"
+}

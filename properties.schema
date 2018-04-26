@@ -1,0 +1,42 @@
+{
+  "type":"object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/component/model.schema",
+  "properties": {
+    "instruction": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "help": "This is the instruction text",
+      "translatable": true
+    },
+    "_reveal": {
+      "type": "object",
+      "required": true,
+      "title": "Reveal",
+      "properties": {
+        "_background": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "title": "Background image",
+          "inputType": "Asset:image",
+          "validators": ["required"],
+          "help": ""
+        },
+        "_foreground": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "title": "Foreground image",
+          "inputType": "Asset:image",
+          "validators": ["required"],
+          "help": ""
+        }
+      }
+    }
+  }
+}

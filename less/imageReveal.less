@@ -1,0 +1,68 @@
+.ba-slider {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #f1f1f1;
+
+    img {
+        width: 100%;
+        display: block;
+        max-width: none;
+    }
+
+    .resize {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 20%;
+        overflow: hidden;
+    }
+    
+    .handle {
+        /* Thin line seperator */
+        position: absolute;
+        left: 20%;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        margin-left: -2px;
+
+        background: rgba(0, 0, 0, .5);
+        cursor: ew-resize;
+
+        &:after {
+            /* Big orange knob  */
+            position: absolute;
+            top: 50%;
+            width: 30px;
+            height: 30px;
+            margin: -15px 0 0 -15px;
+
+            content: '\f07e';
+            font-family: FontAwesome;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            text-align: center;
+            line-height: 30px;
+            background: #ffb800;
+            /* @orange */
+            border: 1px solid #e6a600;
+            /* darken(@orange, 5%) */
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, .3),
+            inset 0 2px 0 rgba(255, 255, 255, .5),
+            inset 0 60px 50px -30px #ffd466;
+            /* lighten(@orange, 20%)*/
+        }
+        
+        &.ba-draggable:after {
+            width: 40px;
+            height: 40px;
+            margin: -20px 0 0 -20px;
+            line-height: 40px;
+            font-size: 20px;
+        }
+    }
+}

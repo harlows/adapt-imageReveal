@@ -1,0 +1,18 @@
+<div class="imagereveal-inner component-inner">
+    {{> component this}}
+    <div class="imagereveal-widget component-widget">
+        <div class="ba-slider">
+            <img src="{{ _reveal._foreground }}">
+            <div class="resize">
+                <img src="{{ _reveal._background }}">    
+            </div>
+            <div class="handle">
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $('.ba-slider').beforeAfter();
+});
+</script>
